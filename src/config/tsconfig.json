@@ -1,0 +1,15 @@
+{
+  "host": "127.0.0.1",
+  "port": "50053",
+  "DB_Config": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "password": "aa421127",
+    "username": "root",
+    "db_name": "shorterService"
+  },
+  "Redis_Config": {
+    "host": "127.0.0.1",
+    "port": 6379
+  }
+}

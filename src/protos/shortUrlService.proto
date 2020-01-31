@@ -1,0 +1,18 @@
+syntax = "proto3";
+package sus;
+import "google/api/annotations.proto";
+service ShortUrlService{
+//获取短链接
+	rpc GetShortProduct (GetShortProductRequest) returns (GetShortProductReponse){
+        option (google.api.http) = {
+        get: "/v1/example/echo"
+   };
+	}
+}
+message GetShortProductRequest{
+		string sourceUrl=1;
+}
+message GetShortProductReponse{
+		string targetUrl=1;
+		string message=2;
+}
